@@ -1,35 +1,28 @@
-import java.util.Scanner;
+package ch4;
+
+import java.util.*;
 
 class phone {
-    private int n;
-    Scanner sc = new Scanner(System.in);
-
-    public phone() {
-
-    }
-
-    public phone(int n) {
-        this.n = n;
+    public phone(String name, String tel) {
+    	//this.name = name;
+    	//this.tel = tel;
     }
 }
-
-class phoneBook extends phone {
-
-    public phoneBook() {
-        super();
-    }
-
-    public int num() {
-        int n = sc.nextInt();
-        sc.close();
-        return n;
-    }
+class phoneBook{
+	Scanner sc = new Scanner(System.in);
+	private phone array[];
+	int n;
+	
+	public phoneBook(int n) {
+		array = new phone[n];
+		n = 0;
+	}
 }
 
-public class _4ìž¥8ë²ˆ {
+public class _4Àå8¹ø {
 
     public static void main(String[] args) {
 
-        System.out.println("ì¸ì›ìˆ˜>> ");
+        System.out.println("ÀÎ¿ø¼ö>> ");
     }
 }
